@@ -8,8 +8,8 @@ load_dotenv()
 endpoint = os.getenv("DOC_INTELLIGENCE_ENDPOINT")
 key = os.getenv("DOC_INTELLIGENCE_KEY")
 model_id = os.getenv("MODEL_ID")
-
-formUrl = "https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/blob/main/Labfiles/02-custom-document-intelligence/test1.jpg?raw=true"
+formUrl = "https://github.com/parag-rs/mslearn-ai-document-intelligence/blob/main/Labfiles/02-custom-document-intelligence/sample-forms/Form_2.jpg?raw=true"
+#formUrl = "https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/blob/main/Labfiles/02-custom-document-intelligence/test1.jpg?raw=true"
 
 document_analysis_client = DocumentAnalysisClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
